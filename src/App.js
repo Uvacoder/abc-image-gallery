@@ -1,27 +1,18 @@
-import "photoswipe/dist/photoswipe.css";
-import "photoswipe/dist/default-skin/default-skin.css";
+import { useState } from 'react';
+import Header from './components/Header';
+import ImageGrid from './components/ImageGrid';
+import UploadForm from './components/UploadForm';
 
-import { Gallery, Item } from "react-photoswipe-gallery";
+const App = () => {
+  const [selectedImg, setSelectedImg] = useState(null);
 
-function App() {
   return (
-    <Gallery>
-      <Item
-        original="https://picsum.photos/1024/768?image=2"
-        thumbnail="https://picsum.photos/200/300?image=2"
-        width="1024"
-        height="768"
-      >
-        {({ ref, open }) => (
-          <img
-            ref={ref}
-            onClick={open}
-            src="https://picsum.photos/200/300?image=2"
-          />
-        )}
-      </Item>
-    </Gallery>
+    <div className='App'>
+      <Header />
+      <UploadForm />
+      <ImageGrid setSelectedImg={setSelectedImg} />
+    </div>
   );
-}
+};
 
 export default App;
