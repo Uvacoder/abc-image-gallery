@@ -1,16 +1,23 @@
-import { useState } from 'react';
-import Header from './components/Header';
-import ImageGrid from './components/ImageGrid';
-import UploadForm from './components/UploadForm';
+
 
 const App = () => {
-  const [selectedImg, setSelectedImg] = useState(null);
+  const photos = [
+    {
+      src: 'http://example.com/example/img1.jpg',
+      width: 4,
+      height: 3
+    },
+    {
+      src: 'http://example.com/example/img2.jpg',
+      width: 1,
+      height: 1
+    }
+  ];
 
   return (
     <div className='App'>
-      <Header />
-      <UploadForm />
-      <ImageGrid setSelectedImg={setSelectedImg} />
+
+      <Gallery photos={photos} />;
     </div>
   );
 };
