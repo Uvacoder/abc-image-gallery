@@ -1,24 +1,16 @@
-
+import Gallery from "react-photo-gallery";
+import './App.css'
+import { photos } from "./components/Photos";
 
 const App = () => {
-  const photos = [
-    {
-      src: 'http://example.com/example/img1.jpg',
-      width: 4,
-      height: 3
-    },
-    {
-      src: 'http://example.com/example/img2.jpg',
-      width: 1,
-      height: 1
-    }
-  ];
-
   return (
     <div className='App'>
-
-      <Gallery photos={photos} />;
-    </div>
+      <h1>Inktober 2022</h1>
+      <h2>Musu Gallery</h2>
+      <div className='wrapper'>
+        <Gallery photos={photos} />;
+      </div>
+    </div >
   );
 };
 
