@@ -1,58 +1,87 @@
-.wrapper {
-    width: 100%;
-}
-
 * {
     box-sizing: border-box;
-}
-
-body {
-    background: slategray;
-    margin: 0;
-    padding: 3em 1em;
-}
-
-ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-image {
-    margin: 0;
+body {
+    font-family: Raleway;
+    background-color: #202125;
 }
 
-caption {
-    font-style: italic;
-    font-size: 0.8em;
-    color: grey;
-    line-height: 1.4;
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
 }
 
-.grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 90%;
-    grid-gap: 1em;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    padding: 2em 1em;
-    background: white;
-}
-
-@media all and (min-width: 600px) {
-    grid-auto-flow: initial;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 20em));
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
 
-    .gridFigure {
-        display: grid;
-        grid-template-rows: 15em 1fr;
-        grid-gap: 1em;
+.gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
 
-        image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
