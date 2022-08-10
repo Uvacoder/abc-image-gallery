@@ -85,3 +85,9 @@ body {
 .opacity-low {
     opacity: 0.5;
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
