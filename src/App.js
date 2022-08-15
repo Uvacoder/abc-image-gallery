@@ -1,6 +1,7 @@
 import './App.css';
 import { cards } from './components/Cards.js'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import FsLightbox from 'fslightbox-react';
 
 
 function App() {
@@ -9,19 +10,39 @@ function App() {
     document.title = "Musu Gallery"
   }, []);
 
+  const [toggler, setToggler] = useState(false)
+  const [slide, setSlide] = useState(1)
+
+  const clickImage = (index) => {
+
+    setToggler(!toggler)
+    setSlide(index)
+
+  };
+
+  const sources = cards.map(card => card.image)
+
   return (
 
     <div className="App">
+      <>
+        <FsLightbox
+          toggler={toggler}
+          sources={sources}
+          slide={slide}
+        />
+      </>
+      <div className='modal'>
+      </div>
       <header className='heading'>
         <h1>Musu Gallery</h1>
         <h2>Inktober 2022</h2>
       </header>
       <div className='wrapper'>
-        {cards.map((card) => {
+        {cards.map((card, index) => {
           return (
-
-            <div className='gallery-image'>
-              <div className='img-box'>
+            <div key={card.image + index} className='gallery-image'>
+              <div className='img-box' onClick={() => clickImage(index + 1)}>
                 <img src={card.image} />
                 <div className='transparent-box'>
                   <div className="caption">{card.caption}
