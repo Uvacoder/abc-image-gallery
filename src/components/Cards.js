@@ -27,7 +27,7 @@ export const cards = [
     {
         /* Day 1 */
         image: axolotl,
-        caption: "Find all 5 Axolotls",
+        caption: "Crystal",
         prompt: 'img_1',
         date: '01.10.2022',
 

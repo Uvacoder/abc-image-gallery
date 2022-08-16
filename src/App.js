@@ -48,12 +48,12 @@ function App() {
             <div key={card.image + index} className='gallery-image'>
               <div className='img-box' onClick={() => clickImage(index + 1)}>
                 <img src={card.image} />
-                <div className='transparent-box'>
-                  <div className="caption">{card.caption}
-                  </div>
+                {/* <div className='transparent-box'> */}
+                <div className="caption">{card.caption}
                 </div>
               </div>
             </div>
+            /*    </div> */
 
 
           )

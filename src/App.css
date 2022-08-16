@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: Raleway;
-  background-color: #202125;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
 }
 
 .heading {
@@ -25,6 +25,9 @@ body {
 }
 
 .gallery-image img {
+  border: white;
+  border-style: solid;
+  border-radius: 10px;
   height: 250px;
   width: 350px;
   transform: scale(1.0);
@@ -45,10 +48,14 @@ body {
 
 .caption {
   position: absolute;
+  background-color: white;
+  color: black;
   bottom: 5px;
   left: 20px;
   opacity: 0.0;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 0.5rem;
+  font-size: 12px;
 }
 
 .transparent-box {
