@@ -2,6 +2,7 @@ import './App.css';
 import { cards } from './components/Cards.js'
 import { useEffect, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
+import moment from 'moment';
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
   };
 
   const sources = cards.map(card => card.image)
+
+  const currentDate = moment().format('X')
+  console.log(currentDate)
 
   return (
 
