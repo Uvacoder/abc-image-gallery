@@ -48,10 +48,10 @@ body {
 
 .caption {
   position: absolute;
-  background-color: white;
-  color: black;
-  bottom: 5px;
-  left: 20px;
+  background-color: rgba(0, 0, 0, 0.829);
+  color: rgba(255, 255, 255, 0.801);
+  bottom: 1px;
+  left: 15px;
   opacity: 0.0;
   transition: transform 0.3s ease, opacity 0.3s ease;
   padding: 0.5rem;
