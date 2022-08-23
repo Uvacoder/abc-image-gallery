@@ -29,15 +29,15 @@ export const cards = [
         image: axolotl,
         caption: "Crystal",
         prompt: 'img_1',
-        date: '01.10.2022',
-
+        date: '23.08.2022',
+        placeholder: subwoolfer,
     },
     {
         /* Day 2 */
         image: llama,
         caption: "Get all 16 Llamas",
         prompt: 'img_2',
-        date: '02.10.2022',
+        date: '23.08.2022',
     },
     {
         /* Day 3 */

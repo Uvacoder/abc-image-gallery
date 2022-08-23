@@ -3,6 +3,7 @@ import { cards } from './components/Cards.js'
 import { useEffect, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import moment from 'moment';
+import subwoolfer from './images/subwoolfer.jpg'
 
 
 function App() {
@@ -21,10 +22,21 @@ function App() {
 
   };
 
-  const sources = cards.map(card => card.image)
-
+  //Fetches current timestamp
   const currentDate = moment().format('X')
-  console.log(currentDate)
+
+  //Filter out future cards
+  const filtered = cards.map((card) => {
+    const timestamp = moment(card.date, 'DD.MM.YYYY').format('X');
+    if (timestamp < currentDate) return card;
+    const placeHolderImage = { image: subwoolfer }
+    const newCard = { ...card, ...placeHolderImage }
+    return newCard;
+  });
+
+  console.log(filtered)
+
+  const sources = filtered.map(card => card.image)
 
   return (
 
@@ -43,16 +55,16 @@ function App() {
         <h2>Inktober 2022</h2>
       </header>
       <div className='wrapper'>
-        {cards.map((card, index) => {
+        {filtered.map((card, index) => {
           return (
             <div key={card.image + index} className='gallery-image'>
               <div className='img-box' onClick={() => clickImage(index + 1)}>
                 <img src={card.image} />
                 {/* <div className='transparent-box'> */}
-                <div className="caption">{card.caption}
-                </div>
+                {/*  <div className="caption">{card.caption} */}
               </div>
             </div>
+            /* </div> */
             /*    </div> */
 
 
