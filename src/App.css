@@ -34,6 +34,23 @@ body {
   transition: transform 0.4s ease;
 }
 
+.gallery-image .placeholderImage {
+  border: white;
+  border-style: solid;
+  border-radius: 10px;
+  height: 250px;
+  width: 350px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderWrapper>div {
+  padding: 0.5rem;
+  text-align: center;
+}
+
 .img-box {
   box-sizing: content-box;
   margin: 10px;
@@ -43,17 +60,16 @@ body {
   display: inline-block;
   color: white;
   position: relative;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .caption {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.829);
   color: rgba(255, 255, 255, 0.801);
-  bottom: 1px;
+  bottom: 10px;
   left: 15px;
-  opacity: 0.0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1.0;
   padding: 0.5rem;
   font-size: 12px;
 }
@@ -77,8 +93,7 @@ body {
 }
 
 .img-box:hover .caption {
-  transform: translateY(-20px);
-  opacity: 1.0;
+  opacity: 0.0;
 }
 
 .img-box:hover {

@@ -3,7 +3,6 @@ import { cards } from './components/Cards.js'
 import { useEffect, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import moment from 'moment';
-import subwoolfer from './images/subwoolfer.jpg'
 
 
 function App() {
@@ -24,19 +23,20 @@ function App() {
 
   //Fetches current timestamp
   const currentDate = moment().format('X')
+  const year = '2022';
 
   //Filter out future cards
   const filtered = cards.map((card) => {
-    const timestamp = moment(card.date, 'DD.MM.YYYY').format('X');
+    const timestamp = moment(`${card.date}.${year}`, 'DD.MM.YYYY').format('X');
     if (timestamp < currentDate) return card;
-    const placeHolderImage = { image: subwoolfer }
+    const placeHolderImage = { image: undefined }
     const newCard = { ...card, ...placeHolderImage }
     return newCard;
   });
 
   console.log(filtered)
 
-  const sources = filtered.map(card => card.image)
+  const sources = filtered.filter(card => card.image).map(card => card.image)
 
   return (
 
@@ -58,13 +58,33 @@ function App() {
         {filtered.map((card, index) => {
           return (
             <div key={card.image + index} className='gallery-image'>
-              <div className='img-box' onClick={() => clickImage(index + 1)}>
-                <img src={card.image} />
-                {/* <div className='transparent-box'> */}
-                {/*  <div className="caption">{card.caption} */}
-              </div>
+              {card.image && (
+                <div className='img-box' onClick={() => clickImage(index + 1)}>
+                  <img src={card.image} />
+                  <div className="caption">{card.caption}
+                  </div>
+                </div>
+              )}
+              {!card.image && (
+                <div className='img-box'>
+                  <div className='placeholderImage'>
+                    <div className='placeholderWrapper'>
+                      <div>
+                        {card.date}
+                      </div>
+                      <div>
+                        {card.caption}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* <div className='transparent-box'> */}
+
             </div>
-            /* </div> */
+
+
             /*    </div> */
 
 

@@ -29,7 +29,7 @@ export const cards = [
         image: axolotl,
         caption: "Crystal",
         prompt: 'img_1',
-        date: '23.08.2022',
+        date: '23.08',
         placeholder: subwoolfer,
     },
     {
@@ -37,210 +37,210 @@ export const cards = [
         image: llama,
         caption: "Get all 16 Llamas",
         prompt: 'img_2',
-        date: '23.08.2022',
+        date: '23.08',
     },
     {
         /* Day 3 */
         image: cats,
         caption: "Get all 10 Cats",
         prompt: 'img_3',
-        date: '03.10.2022',
+        date: '24.08',
     },
     {
         /* Day 4 */
         image: bees,
         caption: "Have Bees",
         prompt: 'img_4',
-        date: '04.10.2022',
+        date: '04.10',
     },
     {
         /* Day 5 */
         image: foxes,
         caption: "Have Foxes",
         prompt: 'img_5',
-        date: '05.10.2022',
+        date: '05.10',
     },
     {
         /* Day 6 */
         image: sheep,
         caption: "Get all 16 Sheep",
         prompt: 'img_6',
-        date: '06.10.2022',
+        date: '06.10',
     },
     {
         /* Day 7 */
         image: turtle,
         caption: "Have Turtles",
         prompt: 'img_7',
-        date: '07.10.2022',
+        date: '07.10',
     },
     {
         /* Day 8 */
         image: dog,
         caption: "Have all 16 Dogs",
         prompt: 'img_8',
-        date: '08.10.2022',
+        date: '08.10',
     },
     {
         /* Day 9 */
         image: parrots,
         caption: "Get all 5 Parrots",
         prompt: 'img_9',
-        date: '09.10.2022',
+        date: '09.10',
     },
     {
         /* Day 10 */
         image: dolphin,
         caption: "Have Dolphins",
         prompt: 'img_10',
-        date: '10.10.2022',
+        date: '10.10',
     },
     {
         /* Day 11 */
         image: fish,
         caption: "Get all 22 Tropical Fish",
         prompt: 'img_11',
-        date: '11.10.2022',
+        date: '11.10',
     },
     {
         /* Day 12 */
         image: dyes,
         caption: "Get all 16 Dyes",
         prompt: 'img_12',
-        date: '12.10.2022',
+        date: '12.10',
     },
     {
         /* Day 13 */
         image: glazedterracotta,
         caption: "Get all 16 Glazed Terracotta",
         prompt: 'img_13',
-        date: '13.10.2022',
+        date: '13.10',
     },
     {
         /* Day 14 */
         image: terracotta,
         caption: "Get all 17 Terrcotta",
         prompt: 'img_14',
-        date: '14.10.2022',
+        date: '14.10',
     },
     {
         /* Day 15 */
         image: concrete,
         caption: "Get all 16 Concrete",
         prompt: 'img_15',
-        date: '15.10.2022',
+        date: '15.10',
     },
     {
         /* Day 16 */
         image: glass,
         caption: "Get all 17 Glass",
         prompt: 'img_16',
-        date: '16.10.2022',
+        date: '16.10',
     },
     {
         /* Day 17 */
         image: flowers,
         caption: "Get all 14 Flowers",
         prompt: 'img_17',
-        date: '17.10.2022',
+        date: '17.10',
     },
     {
         /* Day 18 */
         image: sporeblossom,
         caption: "Find a Spore Blossom",
         prompt: 'img_18',
-        date: '18.10.2022',
+        date: '18.10',
     },
     {
         /* Day 19 */
         image: azalea,
         caption: "Find Azalea Tree",
         prompt: 'img_19',
-        date: '19.10.2022',
+        date: '19.10',
     },
     {
         /* Day 20 */
         image: candles,
         caption: "Make all 17 Candles",
         prompt: 'img_20',
-        date: '20.10.2022',
+        date: '20.10',
     },
     {
         /* Day 21 */
         image: glowberries,
         caption: "Find Glowberries",
         prompt: 'img_21',
-        date: '21.10.2022',
+        date: '21.10',
     },
     {
         /* Day 22 */
         image: glowsquid,
         caption: "Find Glowsquid",
         prompt: 'img_22',
-        date: '22.10.2022',
+        date: '22.10',
     },
     {
         /* Day 23 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_23',
-        date: '23.10.2022',
+        date: '23.10',
     },
     {
         /* Day 24 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_24',
-        date: '24.10.2022',
+        date: '24.10',
     },
     {
         /* Day 25 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_25',
-        date: '25.10.2022',
+        date: '25.10',
     },
     {
         /* Day 26 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_26',
-        date: '26.10.2022',
+        date: '26.10',
     },
     {
         /* Day 27 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_27',
-        date: '27.10.2022',
+        date: '27.10',
     },
     {
         /* Day 28 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_28',
-        date: '28.10.2022',
+        date: '28.10',
     },
     {
         /* Day 29 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_29',
-        date: '29.10.2022',
+        date: '29.10',
     },
     {
         /* Day 30 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_30',
-        date: '30.10.2022',
+        date: '30.10',
     },
     {
         /* Day 31 */
         image: subwoolfer,
         caption: "Make a Subwoolfer Tower",
         prompt: 'img_31',
-        date: '31.10.2022',
+        date: '31.10',
     },
 
 ]
