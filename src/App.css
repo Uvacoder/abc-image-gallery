@@ -5,8 +5,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: brush script mt, cursive;
+  font-size: 8rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
 }
 
 .heading {
@@ -17,11 +27,32 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 1rem;
+  }
+}
+
 .gallery-image {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-image {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .gallery-image img {
@@ -34,6 +65,13 @@ body {
   transition: transform 0.4s ease;
 }
 
+@media only screen and (max-width: 600px) {
+  .gallery-image img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
 .gallery-image .placeholderImage {
   border: white;
   border-style: solid;
@@ -44,6 +82,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery-image .placeholderImage {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .placeholderWrapper>div {
@@ -63,6 +111,15 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+@media only screen and (max-width: 600px) {
+  .img-box {
+    margin: 0;
+    width: auto;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
 .caption {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.829);
@@ -72,6 +129,14 @@ body {
   opacity: 1.0;
   padding: 0.5rem;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .caption {
+    bottom: 45px;
+    left: 15px;
+    font-size: 10px;
+  }
 }
 
 .transparent-box {
@@ -86,6 +151,13 @@ body {
 
 .img-box:hover img {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .img-box:hover img {
+    transform: scale(1.1);
+    border: hidden;
+  }
 }
 
 .img-box:hover .transparent-box {
